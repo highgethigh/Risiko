@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Риск на сделку</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="info">
+        <h4>Плечо: <input type="number" id="leverage" placeholder="Введите плечо"> </h4>
+        <h4>Депозит: <input type="number" id="deposit" placeholder="Введите депозит"> </h4>
+        <h4>Стоп (в процентах): <input type="number" id="stop" placeholder="Введите стоп"> </h4>
+        <button onclick="calculateRisk()">Рассчитать</button>
+    </div>
+    <div class="resultat">
+        <h4>Результат (риск на сделку): <span id="result">---</span></h4>
+        <h4>Убыток от всего депозита (в процентах): <span id="totalLossPercent">---</span></h4>
+    </div>
+    <script src="./main.js" defer></script>
+</body>
+</html>
